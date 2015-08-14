@@ -1,0 +1,1149 @@
+/* line 2, ../sass/ajk.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 6, ../sass/ajk.scss */
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table;
+}
+
+/* line 10, ../sass/ajk.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 13, ../sass/ajk.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 17, ../sass/ajk.scss */
+.header {
+  background: #669900;
+  height: 65px;
+  width: 100%;
+  border-bottom: 3px solid #C0C0C0;
+}
+
+/* line 23, ../sass/ajk.scss */
+.nav-bar {
+  height: 100%;
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 28, ../sass/ajk.scss */
+.nav-bar #logo-img {
+  height: 35px;
+  margin-top: 18px;
+  float: left;
+}
+/* line 33, ../sass/ajk.scss */
+.nav-bar .nav-list {
+  float: left;
+  list-style: none;
+  margin-top: 18px;
+}
+/* line 37, ../sass/ajk.scss */
+.nav-bar .nav-list li {
+  float: left;
+}
+/* line 39, ../sass/ajk.scss */
+.nav-bar .nav-list li a {
+  width: 88px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  padding-top: 5px;
+}
+/* line 48, ../sass/ajk.scss */
+.nav-bar .nav-list li a:hover {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #9ACD32;
+}
+/* line 53, ../sass/ajk.scss */
+.nav-bar .nav-list li #homePage {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid #336600;
+  width: 70px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  background: #507110;
+}
+/* line 59, ../sass/ajk.scss */
+.nav-bar .nav-list li #homePage:hover {
+  background: #507110;
+}
+
+/* line 69, ../sass/ajk.scss */
+#nav-bar-right {
+  float: right;
+  width: 208px;
+  display: inline-block;
+}
+
+/* line 74, ../sass/ajk.scss */
+#newsLogo {
+  background: url("../images/message.png");
+  width: 25px;
+  height: 15px;
+  margin-top: 26px;
+  float: right;
+}
+/* line 80, ../sass/ajk.scss */
+#newsLogo span {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border: 1px solid orange;
+  background: orange;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+}
+
+/* line 93, ../sass/ajk.scss */
+#login {
+  margin: 15px 0;
+  float: left;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid #669900;
+  width: 177px;
+  height: 40px;
+  background: #D3D3D3;
+  display: inline-block;
+}
+/* line 102, ../sass/ajk.scss */
+#login p {
+  width: 68%;
+  text-align: center;
+  font-size: 15px;
+  font-family: Microsoft YaHei;
+  line-height: 40px;
+  overflow: hidden;
+  float: right;
+}
+/* line 110, ../sass/ajk.scss */
+#login p a {
+  color: #669900;
+}
+/* line 112, ../sass/ajk.scss */
+#login p a:hover {
+  color: green;
+}
+/* line 115, ../sass/ajk.scss */
+#login p a span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #669900 transparent transparent transparent;
+  position: relative;
+  top: 17px;
+  left: 8px;
+}
+/* line 127, ../sass/ajk.scss */
+#login #Id-img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #D3D3D3;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  border-radius: 17px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+/* line 139, ../sass/ajk.scss */
+.Id-infor {
+  margin: 0 20px;
+  width: 135px;
+  display: none;
+  border: 1px solid #fff;
+  background: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  list-style: none;
+  position: absolute;
+  top: 56px;
+}
+/* line 149, ../sass/ajk.scss */
+.Id-infor li {
+  display: block;
+}
+/* line 151, ../sass/ajk.scss */
+.Id-infor li a {
+  display: block;
+  margin: 15px 0;
+  color: #C0C0C0;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 157, ../sass/ajk.scss */
+.Id-infor li a:hover {
+  background: #fff;
+  border: 0;
+  color: #669900;
+}
+
+/* line 166, ../sass/ajk.scss */
+#content {
+  width: 75%;
+  margin: 30px auto;
+}
+
+/* line 171, ../sass/ajk.scss */
+.content-left {
+  width: 60%;
+  box-shadow: 3px 3px 2px #DCDCDC;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #F5F5F5;
+  float: left;
+}
+
+/* line 178, ../sass/ajk.scss */
+.cont-left-top {
+  margin: auto;
+}
+/* line 180, ../sass/ajk.scss */
+.cont-left-top h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 187, ../sass/ajk.scss */
+.five-balls {
+  position: relative;
+}
+
+/* line 190, ../sass/ajk.scss */
+.big-ball {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+/* line 196, ../sass/ajk.scss */
+.big-ball svg {
+  width: 100%;
+  height: 100%;
+}
+/* line 200, ../sass/ajk.scss */
+.big-ball:hover {
+  transform: scale(1.3, 1.3);
+}
+/* line 202, ../sass/ajk.scss */
+.big-ball:hover .big-ball-in {
+  fill: #fff;
+}
+/* line 205, ../sass/ajk.scss */
+.big-ball:hover .ball-text {
+  font-size: 18px;
+}
+/* line 208, ../sass/ajk.scss */
+.big-ball:hover #fire-text {
+  color: orange;
+}
+/* line 211, ../sass/ajk.scss */
+.big-ball:hover #exercise-text {
+  color: #669900;
+}
+/* line 214, ../sass/ajk.scss */
+.big-ball:hover #accumulation-text {
+  color: #40E0D0;
+}
+
+/* line 219, ../sass/ajk.scss */
+.small-ball {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 223, ../sass/ajk.scss */
+#moveball1 {
+  position: relative;
+  bottom: 70px;
+}
+
+/* line 228, ../sass/ajk.scss */
+.ball-text {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 35px;
+  left: 28px;
+}
+
+/* line 235, ../sass/ajk.scss */
+#fireball {
+  animation: fireBall 10s infinite;
+  -moz-animation: fireBall 10s infinite;
+  -webkit-animation: fireBall 10s infinite;
+  -o-animation: fireBall 10s infinite;
+}
+
+@keyframes fireBall {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-moz-keyframes fireBall {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-webkit-keyframes fireBall {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-o-keyframes fireBall {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/* line 262, ../sass/ajk.scss */
+#moveball1 {
+  animation: moveBall1 5s infinite;
+  -moz-animation: moveBall1 5s infinite;
+  -webkit-animation: moveBall1 5s infinite;
+  -o-animation: moveBall1 5s infinite;
+}
+
+@keyframes moveBall1 {
+  0% {
+    bottom: 70px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+@-moz-keyframes moveBall1 {
+  0% {
+    bottom: 70px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+@-webkit-keyframes moveBall1 {
+  0% {
+    bottom: 70px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+@-o-keyframes moveBall1 {
+  0% {
+    bottom: 70px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+/* line 293, ../sass/ajk.scss */
+#exercise {
+  animation: exerCise 5s infinite;
+  -moz-animation: exerCise 5s infinite;
+  -webkit-animation: exerCise 5s infinite;
+  -o-animation: exerCise 5s infinite;
+}
+
+@keyframes exerCise {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes exerCise {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes exerCise {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes exerCise {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 320, ../sass/ajk.scss */
+#moveball2 {
+  position: relative;
+  animation: moveBall2 6s infinite;
+  -moz-animation: moveBall2 6s infinite;
+  -webkit-animation: moveBall2 6s infinite;
+  -o-animation: moveBall2 6s infinite;
+}
+
+@keyframes moveBall2 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes moveBall2 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes moveBall2 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes moveBall2 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 348, ../sass/ajk.scss */
+#accumulation {
+  animation: accumuLation 10s infinite;
+  -moz-animation: accumuLation 10s infinite;
+  -webkit-animation: accumuLation 10s infinite;
+  -o-animation: accumuLation 10s infinite;
+}
+
+@keyframes accumuLation {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes accumuLation {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes accumuLation {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes accumuLation {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 375, ../sass/ajk.scss */
+.tabCard {
+  width: 95%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #DCDCDC;
+  margin: 70px auto 10px;
+  border: 1px solid #DCDCDC;
+}
+/* line 381, ../sass/ajk.scss */
+.tabCard ul {
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+}
+/* line 385, ../sass/ajk.scss */
+.tabCard ul li {
+  display: inline-block;
+  width: 49%;
+}
+/* line 388, ../sass/ajk.scss */
+.tabCard ul li a {
+  border: 1px solid #fff;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 27px;
+  font-size: 16px;
+  height: 30px;
+  font-family: Microsoft YaHei;
+  color: #000;
+}
+/* line 398, ../sass/ajk.scss */
+.tabCard ul li a:active {
+  color: #fff;
+}
+/* line 406, ../sass/ajk.scss */
+.tabCard div h4 {
+  font-size: 18px;
+  font-family: Microsoft YaHei;
+  text-indent: 4px;
+}
+/* line 411, ../sass/ajk.scss */
+.tabCard div p {
+  font-size: 18px;
+  font-family: Microsoft YaHei;
+}
+/* line 415, ../sass/ajk.scss */
+.tabCard div p span {
+  color: orange;
+}
+
+/* line 421, ../sass/ajk.scss */
+#tab1 {
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+/* line 424, ../sass/ajk.scss */
+#tab2 {
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* line 428, ../sass/ajk.scss */
+.selected {
+  background: #669900;
+  color: #fff;
+}
+
+/* line 432, ../sass/ajk.scss */
+#zhiNengPJ {
+  position: relative;
+  margin: 20px 5px 0;
+}
+
+/* line 436, ../sass/ajk.scss */
+.pi-con {
+  height: 300px;
+  margin: 10px 0 0 10px;
+  float: left;
+}
+
+/* line 441, ../sass/ajk.scss */
+.clear-both {
+  clear: both;
+}
+
+/* line 444, ../sass/ajk.scss */
+.kcharts-label {
+  color: #555;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* line 449, ../sass/ajk.scss */
+.pjcir {
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+/* line 454, ../sass/ajk.scss */
+.tiaoXingTu {
+  height: 300px;
+  width: 230px;
+  float: right;
+  padding-left: 20px;
+}
+
+/* line 460, ../sass/ajk.scss */
+div.juXing {
+  background: #0000CD;
+  display: inline-block;
+  width: 20px;
+  margin: 5px 5px 0;
+  position: relative;
+}
+/* line 466, ../sass/ajk.scss */
+div.juXing p.jxNo-top {
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  width: 20px;
+  font-size: 10px;
+}
+
+/* line 476, ../sass/ajk.scss */
+#Phone {
+  position: relative;
+  margin: 20px 5px -100px;
+  display: none;
+}
+
+/* line 482, ../sass/ajk.scss */
+#icon-wrap {
+  margin-top: 30px;
+}
+
+/* line 485, ../sass/ajk.scss */
+.icon {
+  margin: 20px 70px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 490, ../sass/ajk.scss */
+.icon-img {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background: #C0C0C0;
+  float: left;
+}
+
+/* line 498, ../sass/ajk.scss */
+.dataImg {
+  width: 94%;
+  margin: 20px auto;
+}
+/* line 501, ../sass/ajk.scss */
+.dataImg #data-cont {
+  list-style: none;
+  display: inline-block;
+  float: left;
+}
+/* line 505, ../sass/ajk.scss */
+.dataImg #data-cont li {
+  position: relative;
+  left: 2px;
+  margin-bottom: 5px;
+  width: 60px;
+  height: 30px;
+  background: orange;
+  color: white;
+  border: 1px solid #C0C0C0;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font: 18px;
+  font-family: Microsoft YaHei;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+}
+/* line 521, ../sass/ajk.scss */
+.dataImg #data-cont .select-a {
+  color: orange;
+  background: #fff;
+  border-right: none;
+}
+
+/* line 530, ../sass/ajk.scss */
+.imgTend {
+  float: left;
+  width: 505px;
+  height: 300px;
+  border: 1px solid #C0C0C0;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+/* line 537, ../sass/ajk.scss */
+.imgTend #date-tab {
+  width: 170px;
+  margin: 5px auto;
+}
+/* line 540, ../sass/ajk.scss */
+.imgTend #date-tab li {
+  display: inline-block;
+  cursor: pointer;
+  background: #DCDCDC;
+  width: 50px;
+  height: 20px;
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+}
+/* line 551, ../sass/ajk.scss */
+.imgTend #date-tab li span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #669900 transparent transparent transparent;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: none;
+}
+/* line 564, ../sass/ajk.scss */
+.imgTend #date-tab .select-li {
+  background: #669900;
+  color: #fff;
+}
+/* line 570, ../sass/ajk.scss */
+.imgTend ul {
+  list-style: none;
+}
+/* line 574, ../sass/ajk.scss */
+.imgTend .tishi {
+  width: 300px;
+  color: orange;
+  font-size: 25px;
+  text-align: center;
+  margin: 20px auto;
+  animation: tishi 25s infinite;
+  -moz-animation: tishi 25s infinite;
+  -webkit-animation: tishi 25s infinite;
+  -o-animation: tishi 25s infinite;
+  position: relative;
+}
+/* line 587, ../sass/ajk.scss */
+.imgTend table {
+  margin: 30px auto 0;
+  border: 1px solid #DCDCDC;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-collapse: collapse;
+  width: 360px;
+  height: 180px;
+}
+/* line 595, ../sass/ajk.scss */
+.imgTend table tr {
+  border: 1px solid #DCDCDC;
+}
+/* line 599, ../sass/ajk.scss */
+.imgTend .xueyazhi {
+  display: inline-block;
+  list-style: none;
+  position: absolute;
+  left: 50px;
+}
+/* line 604, ../sass/ajk.scss */
+.imgTend .xueyazhi li {
+  height: 25px;
+  font-size: 11px;
+  text-align: right;
+  color: #808080;
+  font-family: Microsoft YaHei;
+}
+/* line 613, ../sass/ajk.scss */
+.imgTend .xueya-date {
+  list-style: none;
+  width: 360px;
+  margin: 0 auto;
+}
+/* line 617, ../sass/ajk.scss */
+.imgTend .xueya-date li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 11px;
+  color: #808080;
+  font-family: Microsoft YaHei;
+}
+/* line 626, ../sass/ajk.scss */
+.imgTend .xueya-date .straight-line {
+  height: 100%;
+  position: absolute;
+  width: 10%;
+}
+
+@keyframes tishi {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes tishi {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes tishi {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes tishi {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 654, ../sass/ajk.scss */
+.content-right {
+  width: 36%;
+  float: right;
+}
+
+/* line 658, ../sass/ajk.scss */
+.da-ren-bang {
+  border: 1px solid #C0C0C0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #C0C0C0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 664, ../sass/ajk.scss */
+.da-ren-bang h2 {
+  width: 110px;
+  margin: 20px auto;
+  color: orange;
+  padding-left: 30px;
+  background: url("../images/hg.png") left no-repeat;
+  font-size: 20px;
+  font-family: Microsoft YaHei;
+}
+/* line 673, ../sass/ajk.scss */
+.da-ren-bang ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0 60px 20px;
+  width: 240px;
+}
+/* line 678, ../sass/ajk.scss */
+.da-ren-bang ul .daren-li {
+  float: left;
+}
+/* line 680, ../sass/ajk.scss */
+.da-ren-bang ul .daren-li a {
+  display: inline-block;
+  width: 58px;
+  text-align: center;
+  border: 1px solid white;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #E6E6FA;
+  height: 30px;
+  color: #000;
+  line-height: 30px;
+}
+/* line 692, ../sass/ajk.scss */
+.da-ren-bang ul .daren-li #today-daren {
+  background: #669900;
+  color: #fff;
+}
+/* line 700, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul {
+  display: block;
+  list-style: none;
+  width: 240px;
+  margin: 0 auto;
+}
+/* line 705, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul li {
+  margin: 10px 0;
+  display: block;
+  padding-left: 13px;
+  padding-top: 3px;
+  height: 38px;
+  width: 240px;
+  background: url("../images/jiangpai.png") no-repeat;
+  background-position: 0% 0%;
+  position: relative;
+  color: orange;
+}
+/* line 716, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul li img {
+  width: 28px;
+  height: 28px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  position: absolute;
+  left: 50px;
+}
+/* line 724, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul li div.daren-infor {
+  width: 130px;
+  float: right;
+  margin-right: 20px;
+}
+/* line 728, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul li div.daren-infor p {
+  font-size: 12px;
+  margin: 3px 0;
+  font-family: Microsoft YaHei;
+}
+/* line 732, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul li div.daren-infor p span {
+  color: green;
+  float: right;
+}
+/* line 737, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul li div.daren-infor div {
+  float: left;
+  width: 130px;
+  height: 10px;
+  background: #ADD8E6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 743, ../sass/ajk.scss */
+.da-ren-bang .daren-allday ul li div.daren-infor div span {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 10px;
+  background: #1E90FF;
+}
+
+/* line 758, ../sass/ajk.scss */
+.week-grade {
+  width: 100%;
+  border: 1px solid #C0C0C0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #C0C0C0;
+}
+/* line 763, ../sass/ajk.scss */
+.week-grade h2 {
+  color: #9ACD32;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0 20px;
+  font-size: 16px;
+}
+/* line 770, ../sass/ajk.scss */
+.week-grade div {
+  width: 80%;
+  margin: 10px auto;
+  height: 170px;
+  background: #B0E0E6;
+}
+/* line 777, ../sass/ajk.scss */
+.week-grade p {
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  color: #778899;
+  width: 93%;
+  margin: 14px auto;
+}
+/* line 783, ../sass/ajk.scss */
+.week-grade p .plan-f {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+}
+/* line 788, ../sass/ajk.scss */
+.week-grade p .plan-line {
+  display: inline-block;
+  width: 180px;
+  height: 10px;
+  background: #C0C0C0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 10px;
+}
+
+/* line 804, ../sass/ajk.scss */
+.health-tips {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 807, ../sass/ajk.scss */
+.health-tips h2 {
+  width: 100%;
+  text-align: left;
+  color: #228B22;
+  margin: 40px 0 10px;
+  font-size: 18px;
+}
+/* line 814, ../sass/ajk.scss */
+.health-tips a {
+  color: #9ACD32;
+}
+/* line 816, ../sass/ajk.scss */
+.health-tips a h3 {
+  margin: 10px 0;
+  font-size: 13px;
+  font-family: Microsoft YaHei;
+}
+/* line 823, ../sass/ajk.scss */
+.health-tips p {
+  font-size: 13px;
+  font-family: Microsoft YaHei;
+  color: #778899;
+}
+
+/* line 830, ../sass/ajk.scss */
+#footer {
+  width: 100%;
+  border-top: 5px solid #9ACD32;
+  background: #E6E6FA;
+}
+/* line 834, ../sass/ajk.scss */
+#footer div {
+  max-width: 160px;
+  margin: 20px auto 10px;
+}
+/* line 837, ../sass/ajk.scss */
+#footer div a {
+  color: #9ACD32;
+}
+/* line 841, ../sass/ajk.scss */
+#footer p {
+  max-width: 280px;
+  margin: 0 auto 30px;
+  font-size: 12px;
+  color: #808080;
+  font-family: Microsoft YaHei;
+  text-align: center;
+}

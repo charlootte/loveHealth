@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>爱健康</title>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="ajk.js"></script>
+    
+    <script src="http://g.alicdn.com/kissy/k/1.4.7/seed.js" data-config="{combine:true}"></script>
+    <script type="text/javascript" src="pjcir.js"></script>
+    <script type="text/javascript" src="barchart.js"></script>
+    <script type="text/javascript" src="linechart.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../project/stylesheets/ajk.css">     
+</head>
+<body>
+		<div class="header">
+			<div class="nav-bar clearfix">
+				<img id="logo-img" src="../project/images/logo.png">
+				<ul class="nav-list" >
+					<li><a id="homePage" href="javascript:void(0)">首页</a></li>
+					<li><a class="navCont" href="www.jk198.net">健康计划</a></li>
+					<li><a class="navCont" href="www.jk198.net">健康管理</a></li>
+					<li><a class="navCont" href="www.jk198.net">家人关怀</a></li>
+					<li><a class="navCont" href="www.jk198.net">健康档案</a></li>
+				</ul>
+
+				<div id="nav-bar-right" class="clearfix">
+				    <div id="login">
+					    <p><a id="slide-down-list" href="javascript:;">liyantech<span></span></a></p>
+					    <img id="Id-img" src="../project/images/idimage.png">
+				    </div>
+				    <a id="newsLogo" href="javascript:;"><span></span></a>
+				    <ul class="Id-infor">
+						    <li><a href="javascript:;">账号设置</a></li>
+						    <li><a href="javascript:;">个人信息</a></li>
+						    <li><a href="javascript:;">我的设备</a></li>
+						    <li><a href="javascript:;">退出</a></li>
+				    </ul>
+				</div>
+                       
+				
+			</div>			
+			
+		</div>
+		
+	    <div id="content" class="clearfix">
+	    	<div class="content-left">
+	    		<div class="cont-left-top">
+	    			<h1>我加入爱健康以来<h1>
+	    			<div class="five-balls">
+	    				<div class="big-ball" id="fireball">
+	    					<svg  version="1.1" xmlns="http://www.w3.org/2000/svg">
+	    					    <circle cx="60" cy="60" r="60" stroke="#fff" stroke-width="1" fill="orange"/>
+	    					    <circle class="big-ball-in" cx="60" cy="60" r="50" stroke="orange" stroke-width="1" fill="orange"/>  
+	    				    </svg>
+	    				    <p class="ball-text" id="fire-text">共燃烧<br/>
+	    					    <strong>1215</strong>卡
+	    				    </p>
+	    				</div>	
+
+	    				<svg id="moveball1" class="small-ball" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	    					<circle cx="20" cy="20" r="20" stroke="#fff" stroke-width="1" fill="#DCDCDC"/>
+	    				</svg>
+
+	    				<div class="big-ball" id="exercise">
+	    					<svg  version="1.1" xmlns="http://www.w3.org/2000/svg">
+	    					    <circle cx="60" cy="60" r="60" stroke="#fff" stroke-width="1" fill="#669900"/>
+	    					    <circle class="big-ball-in" cx="60" cy="60" r="50" stroke="#669900" stroke-width="1" fill="#669900"/>
+	    				    </svg>
+	    				    <p class="ball-text" id="exercise-text">已运动<br/>
+	    					    <strong>12</strong>天
+	    				    </p>
+	    				</div>	
+
+	    				<svg id="moveball2" class="small-ball" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	    					<circle cx="20" cy="20" r="20" stroke="#fff" stroke-width="1" fill="#DCDCDC"/>
+	    				</svg>
+
+	    				<div class="big-ball" id="accumulation">
+	    					<svg  version="1.1" xmlns="http://www.w3.org/2000/svg">
+	    					    <circle cx="60" cy="60" r="60" stroke="#fff" stroke-width="1" fill="#40E0D0"/>
+	    					    <circle class="big-ball-in" cx="60" cy="60" r="50" stroke="#40E0D0" stroke-width="1" fill="#40E0D0"/>
+	    				    </svg>
+	    				    <p class="ball-text" id="accumulation-text">积累路程<br/>
+	    					    <strong>15</strong>km
+	    				    </p>
+	    				</div>
+	    				
+	    				
+	    			</div>
+	    		</div>
+	    		
+	    		<div class="tabCard">
+	    			<ul>
+	    				<li class="tabLi"><a id="tab1" href="javascript:;">智能配件</a></li>
+	    				<li class="tabLi"><a id="tab2" href="javascript:;">手机</a></li>
+	    			</ul>
+
+	    			<div id="zhiNengPJ" class="pi-con clearfix">
+	    				<div id="J_Pjcir" class="pjcir"></div>
+	    				<div class="tiaoXingTu" id="J_Barchart">	
+	    				</div>
+	    			</div>
+	    			
+	    			<div id="Phone" class="clearfix">
+	    				<div id="J_Pjcir2" class="pjcir"></div>
+	    				<div class="tiaoXingTu" id="J_Barchart2">
+	    				</div>
+	    			</div>
+	    			
+	    			<div class="clearfix" id="icon-wrap">
+	    				<div class="icon">
+	    				    <div class="icon-img" ><img src="../project/images/foot.png"></div>
+	    				    <p>步数</p>
+	    				    <p><span>0</span>步</p>
+	    			    </div>
+	    			    <div class="icon">
+	    				    <div class="icon-img"><img src="../project/images/zhilupai.png"></div>
+	    				    <p>距离</p>
+	    				    <p><span>0</span>公里</p>
+	    			    </div>
+	    			    <div class="icon">
+	    				    <div class="icon-img"><img src="../project/images/greenfire.png"></div>
+	    				    <p>燃烧</p>
+	    				    <p><span>0</span>卡</p>
+	    			    </div>
+	    			</div>	
+	    		</div>
+
+	    		<div class="dataImg">
+	    			<ul id="data-cont">
+	    				<li id="currentA">运动量</li>
+	    				<li>体重</li>
+	    				<li>血压</li>
+	    				<li>血糖</li>
+	    			</ul>
+	    			<div class="imgTend">
+	    			    <ul id="date-tab">
+	    			    	<li>当天<span class="date-triangle"></span></li>
+	    			    	<li>7天<span class="date-triangle"></span></li>
+	    			    	<li>30天<span class="date-triangle"></span></li>
+	    			    </ul>
+	    			    <ul class="yundongliang">	    			    	
+	    			    	<li class="dangtian">
+	    			    		<p class="tishi">亲，您还没有运动曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="7t" style="display:none;">
+	    			    		<p class="tishi">亲，您还没有运动曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="30t" style="display:none;">
+	    			    		<div id="J_Ydliang"></div>
+	    			    	</li>
+	    			    </ul>
+
+	    			    <ul class="weight" style="display:none;">	    			    	
+	    			    	<li class="dangtian">
+	    			    		<p class="tishi">亲，您还没有体重曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="7t" style="display:none;">
+	    			    		<p class="tishi">亲，您还没有体重曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="30t" style="display:none;">
+	    			    		<p class="tishi">亲，您还没有体重曲线哦！</p>
+	    			    	</li>
+	    			    </ul>
+
+	    			    <ul class="xueya" style="display:none;">	    			    	
+	    			    	<li class="dangtian">
+	    			    		<p class="tishi">亲，您还没有血压曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="7t" style="display:none;">
+	    			    		<p class="tishi">亲，您还没有血压曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="30t" style="display:none;">
+	    			    		<p class="tishi">亲，您还没有血压曲线哦！</p>
+	    			    	</li>
+	    			    </ul>
+
+	    			    <ul class="xuetang" style="display:none;">	    			    	
+	    			    	<li class="dangtian">
+	    			    		<p class="tishi">亲，您还没有血糖曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="7t" style="display:none;">
+	    			    		<p class="tishi">亲，您还没有血糖曲线哦！</p>
+	    			    	</li>
+	    			    	<li class="30t" style="display:none;">
+	    			    		<div id="J_Xuetang"> 
+	    			            </div>
+	    			    	</li>
+	    			    </ul>       				
+	    			</div>
+	    		</div> 
+	    	</div>
+
+	    	<div class="content-right">
+	    		<div class="da-ren-bang">	    			
+	    			<h2>运动达人榜</h2>
+	    			<ul class="daren-list">
+	    				<li class="daren-li"><a class="daren-list1" href="javascript:;">昨天</a></li>
+	    				<li class="daren-li"><a class="daren-list2" id="today-daren" href="javascript:;">今天</a></li>
+	    				<li class="daren-li"><a class="daren-list3" href="javascript:;">7天</a></li>
+	    				<li class="daren-li"><a class="daren-list4" href="javascript:;">所有</a></li>
+	    			</ul>
+	    			<div class="daren-yes2day" style="display:none;"></div>
+	    			<div class="daren-2day" style="display:none;"></div>
+	    			<div class="daren-7day" style="display:none;"></div>
+	    			<div class="daren-allday" style="display:none;">
+	    				<ul>
+	    					<li>
+	    						<span>1</span>
+	    						<img src="../project/images/idimage.png">
+	    						<div class="daren-infor">
+	    							<p>愣子<span>155.17公里</span></p>
+	    							<div><span></span></div>
+	    						</div>
+	    					</li>
+	    					<li>
+	    						<span>2</span>
+	    						<img src="../project/images/idimage.png">
+	    						<div class="daren-infor">
+	    							<p>小星星<span>96.79公里</span></p>
+	    							<div><span></span></div>
+	    						</div>
+	    					</li>
+	    					<li>
+	    						<span>3</span>
+	    						<img src="../project/images/idimage.png">
+	    						<div class="daren-infor">
+	    							<p>小魏<span>15.77公里</span></p>
+	    							<div><span></span></div>
+	    						</div>
+	    					</li>
+	    					<li>
+	    						<span>4</span>
+	    						<img src="../project/images/idimage.png">
+	    						<div class="daren-infor">
+	    							<p>田晨苑<span>11.13公里</span></p>
+	    							<div><span></span></div>
+	    						</div>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<div class="week-grade">
+	    			<h2>本周成绩</h2>
+	    			<div class="plan-finished" id="J_WeekGrade">
+	    			</div>
+	    			<p>
+	    				<span class="plan-f">长辈关爱</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">4次/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">晚辈关爱</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">3次/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">夫妻浪漫</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">4次/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">步行</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">12公里/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">跑步</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">22公里/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">骑行</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">33公里/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">篮球</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">3次/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">控烟</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">1盒/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">限酒</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">4次/周</span>
+	    			</p>
+	    			<p>
+	    				<span class="plan-f">电影</span>
+	    				<span class="plan-line"></span>
+	    				<span class="plan-r">2次/周</span>
+	    			</p>
+	    		</div>
+	    		<div class="health-tips" >
+	    			<h2>健康小贴士</h2>
+	    			<a href=""><h3>不良的生活习惯等于慢性自杀</h3></a>
+	    			<p>健康的生活是每个人所追求的，有了健康的生活方式，才会有健康的身体，可是现在很多坏的生活习惯都会给人带来疾病，大家可能都不知道自己的一些坏习惯可能会让自己慢性自杀。</p>
+	    			<a href=""><h3>【节日趣谈】愚人节，当心被突突了...</h3></a>
+	    			<p>说到四月份，很多人想到就是那个逗比的节日“愚人节”！其实“愚”可是个褒义词哦~比如啥“大智若愚”啊，“愚公”啥的。都是一种精神象征！</p>
+	    			<a href=""><h3>护肤|15条美容小秘诀，让你越来越美</h3></a>
+	    			<p>美女都是长期累月养出来的！编辑整理了15条超级有用的美容小方法，让你轻轻松松越来越美！</p>
+
+	    		</div>
+	    	</div>
+	    </div>
+
+	    <div id="footer" class="clearfix">
+	    	<div>
+	    		<a href="">关于我们</a>
+	    	    <a href="">联系我们</a>
+	    	</div>
+	    	<p>Copyright © 2015 爱健康管理平台</p>
+	    </div>   
+</body>
+</html>
